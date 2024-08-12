@@ -1,21 +1,12 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React from 'react';
 import '../styles/StickerPage.css';
 
 const StickerPage = ({ selfie, theme, Restart }) => {
-
-    // useEffect(() => {
-    //     console.log(Selfie)
-    //     console.log(Theme)
-    // }, [])
 
     const clear = () => {
 
     }
     
-    const print = () => {
-
-    }
-
     return (
     <div className='sticker-page'>
         <div className='header'>
@@ -59,12 +50,12 @@ const StickerPage = ({ selfie, theme, Restart }) => {
         <div className='right-container'>
             <div className='overlay-container'>
                 {selfie ? (
-                    <img className='final-selfie' src={selfie}></img>
+                    <img className='final-selfie' alt='final-selfie' src={selfie}></img>
                 ) : (
                     console.log("error loading selfie")
                 )}
                 {theme ? (
-                    <img className='final-theme' src={theme}></img>
+                    <img className='final-theme' alt='final-theme' src={theme}></img>
                 ) : (
                     console.log("error loading theme")
                 )}
