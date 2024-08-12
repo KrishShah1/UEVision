@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "uereacta",
+    "finaldeploy": "ucr-xcite-ue-visionboard-app"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
